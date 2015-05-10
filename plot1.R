@@ -15,7 +15,8 @@ dataAll$Time <- strptime(paste(dataAll$Date, dataAll$Time), "%Y-%m-%d %H:%M:%S")
 data <- dataAll[(dataAll$Date == "2007-02-01" | dataAll$Date == "2007-02-02"), ]
 
 #Save this subsetted data for later exploratory graphs
-write.table(data, file = "data.txt", row.name=FALSE)
+write.table(data, file = "data.txt", sep=",", row.name=FALSE) # As there are spaces in the date put quotes round the data.
+
 
 
 
