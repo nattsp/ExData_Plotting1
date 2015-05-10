@@ -19,7 +19,7 @@ with(data, plot(Time, Global_active_power, type = "l",
 
 # Save Plot 2 to file
 png(file = "plot2.png",
-    width = 480, height = 480) ## Open PNG device; create 'plot1.png' in my working directory
+    width = 480, height = 480) ## Open PNG device; create 'plot2.png' in my working directory
 with(data, plot(Time, Global_active_power, type = "l",
                 ylab = "Global Active Power (kilowatts)",
                 xlab = "")) #Draw the graph in the png file
